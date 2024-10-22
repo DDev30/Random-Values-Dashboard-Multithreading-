@@ -77,7 +77,7 @@ Follow these steps to run the project on your local machine:
 ## Screenshots
 
 ### Dashboard Interface
-(image.png)
+[Dashboard Interface]![alt text](image.png)
 
 ## License
 
