@@ -34,7 +34,7 @@ pip install Flask
 
 ```
 random-dashboard/
-│
+├── threading.py
 ├── app.py                   # Main Flask application
 ├── templates/
 │   └── index.html           # HTML file for the dashboard
