@@ -5,22 +5,22 @@ import time
 
 app = Flask(__name__)
 
-# A dictionary to hold the random values for each display
+
 random_values = {
     'D1': 0, 'D2': 0, 'D3': 0, 'D4': 0, 'D5': 0, 'D6': 0
 }
 
-# Global flag to control thread execution
+
 running = True
 
-# Function to update random values in the background
+
 def update_value(lb, ub, refresh_time, key):
     global running
     while running:
         random_values[key] = random.randint(lb, ub)
         time.sleep(refresh_time)
 
-# Create threads for each range and refresh time
+
 threads = [
     threading.Thread(target=update_value, args=(10, 20, 10, 'D1')),
     threading.Thread(target=update_value, args=(-10, 10, 20, 'D2')),
