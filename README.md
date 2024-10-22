@@ -79,8 +79,4 @@ Follow these steps to run the project on your local machine:
 ### Dashboard Interface
 ![alt text](image.png)
 
-## License
-
-This project is licensed under the MIT License.
-
 ---
